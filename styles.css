@@ -387,7 +387,9 @@ header {
     background-color: var(--main-font-color-dark);
 } 
 
-.tasteful-recipes, .perfect-blend {
+.tasteful-recipes, 
+.perfect-blend, 
+.reservations {
     background-size: cover;
     display: flex;
     align-items: center;
@@ -423,6 +425,51 @@ header {
 /* the perfect blend */
 .perfect-blend {
     background: url("images/berries.jpg") center no-repeat;
+}
+
+/* reservations */
+.reservations {
+    background: url("images/rsvp.jpg") center no-repeat;
+}
+
+/* rsvp form */
+.submission-form{
+    max-width:500px;
+    margin: 2rem auto;
+    border: 1px solid var(--secondary-font-color);
+    padding:2rem;
+    /* border-radius:5px; */
+}
+.rsvp-form label{
+    display:block;
+    padding:1rem 0 .25rem;
+    text-transform:uppercase;
+    font-size:14px;
+}
+.rsvp-form input, .rsvp-form textarea{
+    display: block;
+    width: 100%;
+    border: 2px solid #2980B9;
+    padding: .5rem;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+  
+#sendBtn{
+    border:0;
+    background:#343050;
+    padding:.5rem;
+    color:white;
+    margin:1rem 0;
+    width:auto;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:.3s background ease;
+}
+
+#sendBtn:hover{
+    background:#3498DB;
 }
 
 /* Footer */
