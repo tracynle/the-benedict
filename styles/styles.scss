@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cabin&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@200&display=swap');
+
 $colors: (
    main-font-color-dark: #252525,
    secondary-font-color: #c59d5f,
@@ -11,13 +12,6 @@ $fonts: (
     menu-font: ('Abel', 'sans-serif'),
     body-font: ('Cabin', 'sans-serif')
 );
-
-// $main-font: 'Source Sans Pro', 'sans-serif';
-// $secondary-font: 'Herr Von Muellerhoff', cursive;
-// $menu-font: 'Abel', 'sans-serif';
-// $body-font: 'Cabin', 'sans-serif';
-
-
 
 @function color($color-name) {
     @return map-get($colors, $color-name);
@@ -34,16 +28,7 @@ $fonts: (
    padding: 0;
    box-sizing: border-box;
 }
-// :root {
-//    --main-font: 'Source Sans Pro', sans-serif;
-//    --secondary-font: 'Herr Von Muellerhoff', cursive;
-//    --menu-font: 'Abel', sans-serif;
-//    --body-font: 'Cabin', sans-serif;
-//    --main-font-color-dark: #252525;
-//    --secondary-font-color: #c59d5f;
-//    --body-font-color: #515151;
-// }
- 
+
 html {
    font-family: font(body-font);
    font-size: 10px;
