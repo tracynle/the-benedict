@@ -51,3 +51,5 @@ sr.reveal(".animate-bottom", {
     distance: '25rem',
     delay: 300
 });
+
+// rsvp
