@@ -1120,7 +1120,8 @@ p {
 
 .form-wrapper {
   background-color: #fff;
-  width: 500px;
+  max-width: 500px;
+  min-width: 200px;
   padding: 25px;
   margin: 50px auto 0;
   border-top: 5px solid #c59d5f;
