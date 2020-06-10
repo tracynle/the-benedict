@@ -53,3 +53,23 @@ sr.reveal(".animate-bottom", {
 });
 
 // rsvp
+
+
+
+// navbar hover
+// on load, underline will render underneath the navbar titles when on current page
+let ulList = document.getElementsByClassName("nav-list");
+let ul = ulList[0];
+let navItems = ul.querySelectorAll(".nav-item");
+
+for (let i = 0; i < navItems.length; i ++) {
+    console.log(navItems[i]);
+    let li = navItems[i];
+    let a = li.querySelector("a");
+    let href = a.href;
+    if (window.location.href.endsWith(href)) {
+        console.log(href);
+        a.className += " active";
+        break;
+    }
+}
